@@ -1,0 +1,11 @@
+type Query {
+    ip: String
+    messages: MessagesQuery
+    users: UsersQuery
+    dates: DateQuery
+}
+
+type Mutation {
+    messages: MessageMutation
+    users: UserMutation
+}

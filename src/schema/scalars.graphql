@@ -1,0 +1,8 @@
+"DateTime value"
+scalar DateTime
+
+"Age 18 - 120 years"
+scalar Age
+
+"Email"
+scalar EmailAddress

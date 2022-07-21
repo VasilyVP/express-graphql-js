@@ -1,0 +1,33 @@
+"Gender data"
+enum Gender {
+    MALE
+    FEMALE
+}
+
+"User data"
+type User {
+    id: ID!
+    "User name"
+    name: String
+    email: EmailAddress!
+    messages: [Message]
+    gender: Gender @deprecated(reason: "Because I want so")
+    age: Age
+    registeredAt: DateTime
+}
+
+type UsersQuery {
+    user(id: Int): User
+    users(ids: [Int]!): [User]
+}
+
+input UserInput {
+    name: String
+    email: String!
+    gender: Gender
+    age: Age
+}
+
+type UserMutation {
+    createUser(user: UserInput): User
+}
