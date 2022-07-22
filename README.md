@@ -11,3 +11,5 @@ express-graphql-js capabilities check
 ## Available scripts
 
 ### `npm start`
+
+### `npm run build`
